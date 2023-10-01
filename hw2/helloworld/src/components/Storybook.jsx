@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Card from './Card';
+import ShopCard from './ShopCard';
 import Loading from 'react-simple-loading';
 
 export default function Storybook() {
@@ -29,7 +29,7 @@ export default function Storybook() {
             gap: '1rem',
           }}>
           {list.map((item) => (
-            <Card item={item} />
+            <ShopCard item={item} />
           ))}
         </div>
         <div className='component'>Cart List</div>

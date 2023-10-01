@@ -1,12 +1,8 @@
 import "./App.css";
-import Storybook from "./components/Storybook";
+import AuthCheck from "./components/AuthCheck";
 
 function App() {
-  return (
-    <div className="App">
-      <Storybook />
-    </div>
-  );
+  return <AuthCheck />;
 }
 
 export default App;
