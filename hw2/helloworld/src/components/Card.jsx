@@ -8,7 +8,6 @@ export default function Card(props) {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         width: '450px',
-        height: '400px',
         backgroundColor: 'white',
         borderRadius: '10px',
         margin: 'auto',

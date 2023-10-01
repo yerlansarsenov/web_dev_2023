@@ -3,6 +3,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Card from './Card';
+import Loading from 'react-simple-loading';
 
 export default function Storybook() {
   const [list, setList] = useState([]);
@@ -11,6 +12,9 @@ export default function Storybook() {
       .get('https://fakestoreapi.com/products')
       .then((res) => setList(res.data));
   });
+  if (list.length == 0) {
+    return <Loading/>
+  }
   return (
     <div className='component' style={{ backgroundColor: 'hsl(30, 38%, 92%)' }}>
       <div className='component'>Navbar</div>
