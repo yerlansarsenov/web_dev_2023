@@ -1,0 +1,30 @@
+.login {
+    color: white;
+    font-size: 1.2rem;
+    /* border: 2px solid rebeccapurple; */
+    width: 10rem;
+    background-color: rgb(43, 7, 7);
+    padding: 1rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    margin: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+}
+
+#count{
+    border-radius: 20px;
+    padding: 0px 10px 0 10px;
+    background-color: #dd0b0b;
+}
+
+button{
+    background: transparent;
+    color: white;
+    border: none;
+    width: 6rem ;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
-export default function Card(props) {
+
+function ShopCard(props) {
   const { item } = props;
   return (
     <div
@@ -39,3 +40,5 @@ export default function Card(props) {
     </div>
   );
 }
+
+export default ShopCard
