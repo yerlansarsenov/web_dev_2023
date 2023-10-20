@@ -49,7 +49,6 @@ function App() {
             <main>
               <Meals />
             </main>
-            <NotificationContainer />
           </CartProvider>
         </NotificationsProvider>
       </AuthProvider>

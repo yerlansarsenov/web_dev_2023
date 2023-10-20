@@ -8,7 +8,7 @@ export default function MealItem(props) {
   const cartCtx = useContext(CartContext);
   const { notifications, addNotification, removeNotification } =
     useNotifications();
-  const price = `$${props.price}`;
+  const price = `${props.price}₸`;
 
   const AddToCartHandler = (amount) => {
     cartCtx.addItem({
