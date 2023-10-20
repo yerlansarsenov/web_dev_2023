@@ -4,6 +4,7 @@ import classes from "../Cart/Cart.module.css";
 import React, { useState } from "react";
 
 import Modal from "../UI/Modal";
+import { useToast } from "@chakra-ui/react";
 
 function isValidEmail(email) {
   // Regular expression for a basic email validation
@@ -16,16 +17,27 @@ const LoginModal = (props) => {
   const { user, login, logout } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const toast = useToast();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (email.trim() === "" || password.trim() === "") {
-      alert("Please fill in all fields.");
+      toast({
+        title: "Please fill in all fields.",
+        status: "error",
+        duration: 1000,
+        isClosable: true,
+      });
       return;
     }
     if (!isValidEmail(email)) {
-      alert("Email is invalid");
+      toast({
+        title: "Email is invalid",
+        status: "error",
+        duration: 1000,
+        isClosable: true,
+      });
       return;
     }
 

@@ -3,17 +3,24 @@ import { useRef, useState } from "react";
 import Input from "../../UI/Input";
 import classes from "./MealItemForm.module.css";
 import { useAuth } from "../../Auth/AuthProvider";
+import { useToast } from "@chakra-ui/react";
 
 const MealItemForm = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
   const { user, login, logout } = useAuth();
+  const toast = useToast();
 
   const submitHandler = (event) => {
     event.preventDefault();
 
     if (!user) {
-      alert("Please login");
+      toast({
+        title: "Please login",
+        status: "error",
+        duration: 1000,
+        isClosable: true,
+      });
       return;
     }
     const enteredAmount = amountInputRef.current.value;

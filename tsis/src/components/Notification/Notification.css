@@ -1,0 +1,26 @@
+/* Notification.css */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .notification-wrapper {
+    margin-bottom: 10px; /* Add space between notifications */
+  }
+  
+  .notification {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .notification button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
