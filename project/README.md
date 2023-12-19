@@ -15,4 +15,5 @@ The main functionalities include:
 |-------------------------|:------------------------------------------------------------------------------------------:|
 | Balgabay Nurassyl       |                       [nnbzh](https://github.com/nnbzh/ForumProject)                       |
 | Nurmukhambet Assylanbek | [asiknurmukhambet](https://github.com/asiknurmukhambet/ForumProject/blob/master/README.md) |
-| Sarsenov Yerlan         |                     [yerlansarsenov](https://github.com/yerlansarsenov)                      |
+| Sarsenov Yerlan         |                     [yerlansarsenov](https://github.com/yerlansarsenov)                    |
+| Saduakhassov Nursat     |                                       [WooWooNursat](https://github.com/WooWooNursat)      |
